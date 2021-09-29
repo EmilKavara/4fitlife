@@ -1,0 +1,205 @@
+/* LOADER*/
+
+@keyframes fadeinall {
+    0% {
+      opacity: 1; }
+    97% {
+      opacity: 0; }
+    98% {
+      opacity: 0;
+      -webkit-transform: translateY(0);
+      transform: translateY(0); }
+    99% {
+      opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    100% {
+      opacity: 0;
+      z-index: -1; } }
+    #loader {
+      opacity: 1;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      background-color: #fff;
+      z-index: 999;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation: fadeinall 1s normal both;
+      animation: fadeinall 1s normal both;
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s; }
+
+      /*LOADER ENDS HERE */
+
+
+
+      /*FORM */
+      .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 280px;
+      }
+      
+      /* The popup form - hidden by default */
+      .form-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 300px;
+        padding: 10px;
+        background-color: white;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+
+
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: red;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+      /*KRAJ POPOUT FORME*/
+
+
+      @media (min-width: 375px) {  
+       /*FORM */
+       .open-button {
+        background-color: #25282A;
+        color: white;
+        padding: 0px;
+        width:100px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 15px;
+        right: 19px;
+        width: 180px;
+      }
+    }
+
+@media (min-height: 675px){
+    .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 23px;
+        right: 28px;
+        width: 140px;
+      }
+      
+      /* The popup form - hidden by default */
+      .form-popup {
+        display: none;
+        position: fixed;
+        top:120px;
+        bottom: 0px;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+          width: 320px;
+        max-width: 350px;
+        padding: 10px;
+        background-color: white;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=number], .form-container select {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0px 22px 0px;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container select, .form-container input[type=number]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:15px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: red;
+        padding-bottom: 15px;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+
+
+
+
+
+}
